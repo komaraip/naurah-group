@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">
+                <a href="/Home/index.html">
+                    <img src="assets/logo.png" alt="">
+                </a>
+            </h2>
+
+            <input type="checkbox" id="menu-toggler">
+
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="90px" height="40px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </label>
+
+            <ul class="all-links">
+                <li><a href="/Home/index.html">Home</a></li>
+                <li><a href="/Portfolio/index.html">Portfolio</a></li>
+                <li><a href="/AboutUs/index.html">About Us</a></li>
+                <li><a href="/Article/index.html">Article</a></li>
+                <li><a href="/ContactUs/index.html" class="active">Contact Us</a></li>
+                <li><a href="/Home/IND/index.html" target="blank"> <span class="material-symbols--translate"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="home">
+        <div class="home-content">
+            <div class="title">
+                <h1><span>About Us</span></h1>
+                <p>We are PT Natama Putra Wiharja, a company founded based on integrity, 
+                    professionalism and protecting environmental aspects to advance and 
+                    prosper the lives of the Indonesian people.
+                </p>
+                <div class="rect"></div>
+            </div>
+
+            <div class="image">
+                <img src="assets/home.png" alt="">
+            </div>
+        </div>        
+    </div>
+
+    <div class="vismis">
+        <div class="content v">
+            <h1><span>Our</span> Vision</h1>
+            <h2>
+                "To be a company with excellence, 
+                integrity & innovation in the future"
+            </h2>
+        </div>
+
+        <div class="content m">
+            <h1><span>Our</span> Mission</h1>
+            <h2>
+                "Committed, loyal, integrated, and 
+                providing satisfaction and quality to clients"
+            </h2>
+        </div>
+    </div>
+
+    <div class="customer">
+        <div class="container">
+            <div class="title">
+                <h1>Our Beloved Customer</h1>
+                <p>Customers who are satisfied with our performance</p>
+            </div>
+
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    chevron_left
+                </button>
+
+                <ul class="image-list">
+                    <img class="image-item" src="assets/customer1.png" alt="img-1" />
+                    <img class="image-item" src="assets/customer2.png" alt="img-2" />
+                    <img class="image-item" src="assets/customer3.png" alt="img-3" />
+                </ul>
+
+                <button id="next-slide" class="slide-button material-symbols-rounded">
+                    chevron_right
+                </button>
+
+            </div>
+
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Article</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+
+                    <ul>
+                        <li>
+                            <h5>Phone:</h5>
+                            <a href="">+62 812-2850-5055 (Danau)</a>
+                            <a href="">+62 815-1489-5807 (Danang)</a>
+                        </li>
+                        <li>
+                            <h5>Phone:</h5>
+                            <a href="">Semboja Building 3rd Floor, Jl Raya Bekasi Barat, Rawa Bunga, Jatinegara, Jakarta City</a>
+                        </li>
+                        <li>
+                            <h5>Email address:</h5>
+                            <a href=""> info@nayyara.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>© 2024 Copyright by Naurah Group Developers. All Right Reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="/AboutUs/script.js"></script>
+</body>
+</html>

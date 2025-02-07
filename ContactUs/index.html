@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Contact US</title>
+</head>
+<body>
+
+<header>
+        <nav class="navbar">
+            <h2 class="logo">
+                <a href="/Home/index.html">
+                    <img src="assets/logo.png" alt="">
+                </a>
+            </h2>
+
+            <input type="checkbox" id="menu-toggler">
+
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="90px" height="40px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </label>
+
+            <ul class="all-links">
+                <li><a href="/Home/index.html">Home</a></li>
+                <li><a href="/Portfolio/index.html">Portfolio</a></li>
+                <li><a href="/AboutUs/index.html">About Us</a></li>
+                <li><a href="/Article/index.html">Article</a></li>
+                <li><a href="/ContactUs/index.html" class="active">Contact Us</a></li>
+                <li><a href="/Home/IND/index.html" target="blank"> <span class="material-symbols--translate"></span></a></li>
+            </ul>
+        </nav>
+</header>
+
+<section class="home" id="home">
+      <div class="home-text">
+        
+        <p class="desc-1">We <span class="specs-1">know how</span> to make<br><span class="specs-1">everything</span> better </p> 
+        <p class="desc-2">Contact Us </p>
+      
+      </div>
+
+      <div class="home-img">
+        <img src="Contact us-bro 1.png" alt="img">
+      </div>
+</section>
+
+
+    <section class="services" id="services">
+
+
+    <div class="services-content">
+
+
+        <div class="box_1">
+            <div class="s-icons">
+                <i class='bx bxs-phone'><span class="descript_1">Phone</span> </i>
+                
+            </div>
+            
+            <p>
+                +62 812-2850-5055 (Danau)<br>
+                +62 815-1489-5807 (Danang)
+            </p>
+        </div>
+
+
+        <div class="box_1_mid">
+            <div class="s-icons">
+                <i class='bx bxs-map' ><span class="descript_1">Address</span> </i>
+                
+            </div>
+            <p>  
+                Semboja Building 3rd Floor, 
+                <br>
+                Jl Raya Bekasi Barat,
+                <br> 
+                Rawa Bunga, Jatinegara, 
+                <br>
+                Jakarta City
+            </p>
+    
+        </div>
+
+        <div class="box_1_2">
+            <div class="s-icons">
+                <i class='bx bxs-time-five' ><span class="descript_1">Opening Hours</span> </i>
+            </div>
+            
+            <p>
+                Monday-Saturday 8am - 5pm
+            </p>
+        
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="form">
+
+    <div class="main-text">
+        <p>Contact Us by Email</p>
+        <h2>Get in touch</h2>
+    </div>
+
+    <form class="contact-form" id="form">
+
+    <div class="input-control">
+    <label>First Name <span class="red">*</span></label>
+    <div class="txtb">
+            <input type="text" name="fullname" id="fullname" value=""  class="fullname" required>
+    </div>
+    <div class="error"></div>
+    </div>
+
+
+
+    <div class="input-control">
+    <label>Last Name <span class="red">*</span></label>
+    <div class="txtb">
+        <input type="text" name="lastname" id="lastname" value=""  class="lastname" required >
+    </div>
+    <div class="error"></div>
+    </div>
+
+
+    <div class="input-control">
+    <label>Company Name <span class="red">*</span></label>
+    <div class="txtb">
+            
+        <input type="text" name="companyname" id="companyname" value=""  class="companyname" required>
+    </div>
+    <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+    <label>Email address <span class="red">*</span></label>
+    <div class="txtb">
+    <input type="text" name="email" id="email" value=""   class="email" required>
+    </div>
+    <div class="error"></div>
+    </div>
+
+
+    <div class="input-control">
+    <label>Need <span class="red">*</span></label>
+    <div class="txtb">
+    
+    <input type="text" name="need" id="need" placeholder="(House Renovation,etc)"  class="need">
+    </div>
+    <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+    <label>Requirenment Details <span class="red">*</span></label>
+    <div class="txtb">
+    
+    <textarea name="requirenment" id="requirenment" cols="30" rows="10"  class="message" placeholder="(Budget 50 million, land size 5 x 10 cm, etc)" required></textarea>
+    
+
+    </div>
+    <div class="error"></div>
+    </div>
+
+<button class="submit" onclick="openPopup()" type="submit">Submit</button>
+<div class="popup" id="popup">
+    <img src="404-tick.png" alt="pic">
+    <h2>Thank You!</h2>
+    <p>Your details has been succesfully submitted. Thanks!</p>
+    <button type="button" onclick="closePopup()">Ok</button>
+</div>
+
+</form>
+
+
+
+
+
+
+</section>
+
+
+
+
+  <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+
+
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Article</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+
+                    <ul>
+                        <li>
+                            <h5>Phone:</h5>
+                            <a href="">+62 812-2850-5055 (Danau)</a>
+                            <a href="">+62 815-1489-5807 (Danang)</a>
+                        </li>
+                        <li>
+                            <h5>Phone:</h5>
+                            <a href="">Semboja Building 3rd Floor, Jl Raya Bekasi Barat, Rawa Bunga, Jatinegara, Jakarta City</a>
+                        </li>
+                        <li>
+                            <h5>Email address:</h5>
+                            <a href=""> info@nayyara.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="footer-col">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>© 2024 Copyright by Nayyara Group Developers. All Right Reserved.</p>
+                </div>
+
+            
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" type="module">
+  
+    </script>
+  </body>
+</html>
